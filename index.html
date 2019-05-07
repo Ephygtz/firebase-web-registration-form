@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Firebase Web Registration</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<form action="" method="POST" id="registrationForm">
+		<h1>Register</h1>
+		<div class="alert">Message Sent</div>
+		<fieldset>
+			<!-- Section 1 -->
+			<legend>
+				<span class="section">1: </span>Your Basic Info
+			</legend>
+			<label>Name:
+				<input type="text" name="name" required />
+			</label>
+
+			<label>Email:
+				<input type="email" name="email" required />
+			</label>
+
+			<label for="password">password:
+				<input type="password" name="password" required />
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<!-- section 2 -->
+			<legend>
+				<span class="section">2: </span>Profile
+			</legend>
+
+			<label>Bio:
+				<textarea name="bio" required></textarea>
+			</label>
+
+			<label for="job">Job Role:</label>
+			<select name="job" id="job" required>
+				<optgroup label="Web">
+					<option value="front_end_developer" id="frontend">Frontend Developer</option>
+					<option value="back_end_developer" id="backend">Backend Developer</option>
+					<option value="fullstack_developer" id="fullstack">Fullstack Developer</option>
+				</optgroup>
+				<optgroup label="Mobile">
+					<option value="android" id="android">Android</option>
+					<option value="reactive" id="reactN">React Native</option>
+					<option value="flutter" id="flutter">Flutter</option>
+				</optgroup>
+			</select>
+			<br /><br />
+			<label>Interest:</label>
+
+			<select id="interest" required>
+				<option value="development">Development</option>
+				<option value="design">Design</option>
+				<option value="business">Business</option>
+			</select>
+
+
+			<button type="submit" sendMessage()>Register</button>
+		</form>
+	</body>
+	</html>
